@@ -74,7 +74,7 @@ jobs:
             const files = p.files.map(f => f.path.replace(/^package\//, ''));
             const mustHave = ['dist/index.js', 'dist/index.d.ts', 'dist/cli.js',
                               'catalog/index.json', 'catalog/sharex/catbox.moe.sxcu',
-                              'catalog/aiti/joplin.sxcu', 'README.md', 'README.zh-CN.md',
+                              'catalog/aiti/joplin.sxcu', 'README.md', 'docs/README.zh-CN.md',
                               'docs/design.md', 'docs/api.md', 'docs/custom-uploader-guide.md'];
             const missing = mustHave.filter(f => !files.includes(f));
             if (missing.length) { console.error('missing from tarball: ' + missing.join(', ')); process.exit(1); }
