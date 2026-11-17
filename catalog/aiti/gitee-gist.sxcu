@@ -1,0 +1,12 @@
+{
+  "Name": "Gitee Snippet",
+  "DestinationType": "TextUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "https://gitee.com/api/v5/gists",
+  "Body": "JSON",
+  "Data": "{\"description\":\"{{title}} {{tags}}\",\"public\":false,\"files\":{\"share.md\":{\"content\":\"{{content}}\"}}}",
+  "Headers": { "Content-Type": "application/json" },
+  "Parameters": { "access_token": "<token>" },
+  "URL": "$json:html_url$",
+  "DeletionURL": ""
+}

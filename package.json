@@ -1,0 +1,66 @@
+{
+  "name": "@aiti-ai/content-share",
+  "version": "0.1.0",
+  "description": "Provider-based content sharing: upload text, images or files to paste bins, image hosts, object storage and note archives, then return a shareable URL. SXCU catalog compatible (148 ShareX configs), zero runtime dependencies.",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./catalog": {
+      "default": "./catalog/index.json"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "src",
+    "catalog",
+    "mocks/src",
+    "docs",
+    "README.md",
+    "README.zh-CN.md",
+    "CHANGELOG.md"
+  ],
+  "bin": {
+    "content-share": "./src/cli.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --experimental-strip-types test/*.test.mjs",
+    "catalog:sync": "node scripts/sync-sharex-catalog.mjs",
+    "verify": "npm run typecheck && npm test && npm run build && npm run build:catalog",
+    "build:catalog": "node scripts/build-catalog.mjs"
+  },
+  "keywords": [
+    "share",
+    "upload",
+    "paste",
+    "pastebin",
+    "image-host",
+    "file-host",
+    "sxcu",
+    "sharex",
+    "gist",
+    "gitee",
+    "oss",
+    "joplin",
+    "bookmark",
+    "aiti-package",
+    "aiti"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiti-ai/content-share.git"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}

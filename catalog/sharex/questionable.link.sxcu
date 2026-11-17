@@ -1,0 +1,12 @@
+{
+  "Version": "12.4.1",
+  "DestinationType": "URLShortener",
+  "RequestMethod": "POST",
+  "RequestURL": "https://questionable.link/shorten",
+  "Body": "MultipartFormData",
+  "Arguments": {
+    "url": "$input$"
+  },
+  "URL": "$json:url$",
+  "DeletionURL": "$json:del_url$"
+}

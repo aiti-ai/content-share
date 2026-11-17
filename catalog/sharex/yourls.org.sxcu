@@ -1,0 +1,13 @@
+{
+  "Version": "12.4.1",
+  "DestinationType": "URLShortener",
+  "RequestMethod": "POST",
+  "RequestURL": "http://yourls.org/yourls-api.php",
+  "Body": "MultipartFormData",
+  "Arguments": {
+    "signature": "Your signature",
+    "action": "shorturl",
+    "url": "$input$",
+    "format": "simple"
+  }
+}

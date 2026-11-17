@@ -1,0 +1,10 @@
+{
+  "Name": "SiYuan",
+  "DestinationType": "TextUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "http://localhost:6806/api/filetree/createDocWithMd",
+  "Body": "JSON",
+  "Data": "{\"notebook\":\"{{notebook}}\",\"path\":\"/{{title}}\",\"markdown\":\"{{content}}\"}",
+  "Headers": { "Authorization": "Token <token>", "Content-Type": "application/json" },
+  "URL": "siyuan://blocks/$json:data$"
+}

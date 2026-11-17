@@ -1,0 +1,10 @@
+{
+  "Name": "Flomo",
+  "DestinationType": "TextUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "https://flomoapp.com/iwh/<webhook_id>/",
+  "Body": "JSON",
+  "Data": "{\"content\":\"{{content}}\"}",
+  "Headers": { "Content-Type": "application/json" },
+  "URL": "https://flomoapp.com/"
+}

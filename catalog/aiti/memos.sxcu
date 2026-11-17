@@ -1,0 +1,10 @@
+{
+  "Name": "Memos",
+  "DestinationType": "TextUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "http://localhost:5230/api/v1/memos",
+  "Body": "JSON",
+  "Data": "{\"content\":\"{{content}}\",\"visibility\":\"PRIVATE\"}",
+  "Headers": { "Authorization": "Bearer <token>", "Content-Type": "application/json" },
+  "URL": "http://localhost:5230/m/$json:name$"
+}

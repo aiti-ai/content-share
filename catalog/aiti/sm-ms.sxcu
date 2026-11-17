@@ -1,0 +1,11 @@
+{
+  "Name": "SM.MS",
+  "DestinationType": "ImageUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "https://sm.ms/api/v2/upload",
+  "Body": "MultipartFormData",
+  "FileFormName": "smfile",
+  "Headers": { "Authorization": "<token>" },
+  "URL": "$json:data.url$",
+  "DeletionURL": "$json:data.delete$"
+}

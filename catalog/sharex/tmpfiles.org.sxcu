@@ -1,0 +1,20 @@
+{
+  "Version": "12.4.1",
+  "DestinationType": "FileUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "https://tmpfiles.org/",
+  "Parameters": {
+    "upload": ""
+  },
+  "Body": "MultipartFormData",
+  "Arguments": {
+    "max_views": "0",
+    "max_minutes": "60",
+    "upl": "Upload"
+  },
+  "FileFormName": "input_file",
+  "RegexList": [
+    "\"img_preview\" src=\"(.+)\""
+  ],
+  "URL": "https://tmpfiles.org$regex:1|1$"
+}

@@ -1,0 +1,2336 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-17T12:29:43.436Z",
+  "count": 161,
+  "entries": [
+    {
+      "id": "aliyun-oss",
+      "name": "Alibaba Cloud OSS",
+      "kinds": [
+        "text",
+        "image",
+        "file"
+      ],
+      "category": "publish",
+      "source": "aiti",
+      "auth": "key",
+      "recommended": true,
+      "note": "V1 signed; object key prefix acts as directory",
+      "status": "ok",
+      "code": true
+    },
+    {
+      "id": "catbox.moe",
+      "name": "catbox.moe",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": true,
+      "note": "Anonymous & permanent; slow from mainland China",
+      "status": "ok",
+      "file": "sharex/catbox.moe.sxcu"
+    },
+    {
+      "id": "gitee-gist",
+      "name": "Gitee Snippet",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "aiti",
+      "auth": "token",
+      "recommended": true,
+      "note": "China-friendly; personal access token with gists scope",
+      "status": "ok",
+      "file": "aiti/gitee-gist.sxcu"
+    },
+    {
+      "id": "gofile.io",
+      "name": "gofile.io",
+      "kinds": [
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": true,
+      "note": "Anonymous file host",
+      "status": "ok",
+      "file": "sharex/gofile.io.sxcu"
+    },
+    {
+      "id": "imgbb.com",
+      "name": "imgbb.com",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "token",
+      "recommended": true,
+      "note": "Free API key from api.imgbb.com",
+      "status": "ok",
+      "file": "sharex/imgbb.com.sxcu"
+    },
+    {
+      "id": "local-link",
+      "name": "Local link",
+      "kinds": [
+        "text",
+        "image",
+        "file"
+      ],
+      "category": "local",
+      "source": "aiti",
+      "auth": "key",
+      "recommended": true,
+      "note": "No upload — creates a local session link",
+      "status": "ok",
+      "code": true
+    },
+    {
+      "id": "lsky-pro",
+      "name": "Lsky Pro",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "aiti",
+      "auth": "token",
+      "recommended": true,
+      "note": "Set your own endpoint in the target form",
+      "status": "ok",
+      "file": "aiti/lsky-pro.sxcu"
+    },
+    {
+      "id": "paste.rs",
+      "name": "paste.rs",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "aiti",
+      "auth": "none",
+      "recommended": true,
+      "note": "Anonymous text paste",
+      "status": "ok",
+      "file": "aiti/paste.rs.sxcu"
+    },
+    {
+      "id": "0x0.st (Image uploader)",
+      "name": "0x0.st (Image uploader)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "Intermittent 500 / Cloudflare challenge",
+      "status": "legacy",
+      "file": "sharex/0x0.st (Image uploader).sxcu"
+    },
+    {
+      "id": "0x0.st (URL shortener)",
+      "name": "0x0.st (URL shortener)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/0x0.st (URL shortener).sxcu"
+    },
+    {
+      "id": "9m.no",
+      "name": "9m.no",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/9m.no.sxcu"
+    },
+    {
+      "id": "aboo.se",
+      "name": "aboo.se",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/aboo.se.sxcu"
+    },
+    {
+      "id": "api.anonfiles.com",
+      "name": "api.anonfiles.com",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "Service discontinued",
+      "status": "dead",
+      "file": "sharex/api.anonfiles.com.sxcu"
+    },
+    {
+      "id": "aww.moe",
+      "name": "aww.moe",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/aww.moe.sxcu"
+    },
+    {
+      "id": "bakka.me",
+      "name": "bakka.me",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/bakka.me.sxcu"
+    },
+    {
+      "id": "beeimg.com",
+      "name": "beeimg.com",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/beeimg.com.sxcu"
+    },
+    {
+      "id": "boring.host (Anonymous)",
+      "name": "boring.host (Anonymous)",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/boring.host (Anonymous).sxcu"
+    },
+    {
+      "id": "boring.host (User)",
+      "name": "boring.host (User)",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/boring.host (User).sxcu"
+    },
+    {
+      "id": "bpaste.net",
+      "name": "bpaste.net",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/bpaste.net.sxcu"
+    },
+    {
+      "id": "cancer-co.de",
+      "name": "cancer-co.de",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/cancer-co.de.sxcu"
+    },
+    {
+      "id": "capella.pics",
+      "name": "capella.pics",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/capella.pics.sxcu"
+    },
+    {
+      "id": "catgirlsare.sexy",
+      "name": "catgirlsare.sexy",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/catgirlsare.sexy.sxcu"
+    },
+    {
+      "id": "chevereto.com",
+      "name": "chevereto.com",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/chevereto.com.sxcu"
+    },
+    {
+      "id": "clyp.it",
+      "name": "clyp.it",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/clyp.it.sxcu"
+    },
+    {
+      "id": "cockfile.com",
+      "name": "cockfile.com",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/cockfile.com.sxcu"
+    },
+    {
+      "id": "digitaaldelen.nl",
+      "name": "digitaaldelen.nl",
+      "kinds": [
+        "image",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/digitaaldelen.nl.sxcu"
+    },
+    {
+      "id": "Discord post",
+      "name": "Discord post",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/Discord post.sxcu"
+    },
+    {
+      "id": "Discord webhook (Image uploader)",
+      "name": "Discord webhook (Image uploader)",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/Discord webhook (Image uploader).sxcu"
+    },
+    {
+      "id": "Discord webhook (URL sharing service)",
+      "name": "Discord webhook (URL sharing service)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/Discord webhook (URL sharing service).sxcu"
+    },
+    {
+      "id": "Discord webhook embed (URL sharing service)",
+      "name": "Discord webhook embed (URL sharing service)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/Discord webhook embed (URL sharing service).sxcu"
+    },
+    {
+      "id": "dnlk.de",
+      "name": "dnlk.de",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/dnlk.de.sxcu"
+    },
+    {
+      "id": "dpaste.com",
+      "name": "dpaste.com",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/dpaste.com.sxcu"
+    },
+    {
+      "id": "dropfile.to",
+      "name": "dropfile.to",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/dropfile.to.sxcu"
+    },
+    {
+      "id": "dtransfer.net (Anonymous)",
+      "name": "dtransfer.net (Anonymous)",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/dtransfer.net (Anonymous).sxcu"
+    },
+    {
+      "id": "dtransfer.net (User)",
+      "name": "dtransfer.net (User)",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/dtransfer.net (User).sxcu"
+    },
+    {
+      "id": "elixi.re",
+      "name": "elixi.re",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/elixi.re.sxcu"
+    },
+    {
+      "id": "elixi.re (URL shortener)",
+      "name": "elixi.re (URL shortener)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/elixi.re (URL shortener).sxcu"
+    },
+    {
+      "id": "epvpimg.com",
+      "name": "epvpimg.com",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/epvpimg.com.sxcu"
+    },
+    {
+      "id": "Example",
+      "name": "Example",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/Example.sxcu"
+    },
+    {
+      "id": "f.blicky.net",
+      "name": "f.blicky.net",
+      "kinds": [
+        "image",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/f.blicky.net.sxcu"
+    },
+    {
+      "id": "file.bin.moe (Image uploader)",
+      "name": "file.bin.moe (Image uploader)",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/file.bin.moe (Image uploader).sxcu"
+    },
+    {
+      "id": "file.bin.moe (URL shortener)",
+      "name": "file.bin.moe (URL shortener)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/file.bin.moe (URL shortener).sxcu"
+    },
+    {
+      "id": "file.coffee",
+      "name": "file.coffee",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/file.coffee.sxcu"
+    },
+    {
+      "id": "file.io",
+      "name": "file.io",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/file.io.sxcu"
+    },
+    {
+      "id": "file.wine",
+      "name": "file.wine",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/file.wine.sxcu"
+    },
+    {
+      "id": "file.wine (Random)",
+      "name": "file.wine (Random)",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/file.wine (Random).sxcu"
+    },
+    {
+      "id": "files.httpreq.club",
+      "name": "files.httpreq.club",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/files.httpreq.club.sxcu"
+    },
+    {
+      "id": "flomo",
+      "name": "Flomo",
+      "kinds": [
+        "text"
+      ],
+      "category": "archive",
+      "source": "aiti",
+      "auth": "none",
+      "recommended": false,
+      "note": "Flomo webhook",
+      "status": "ok",
+      "file": "aiti/flomo.sxcu"
+    },
+    {
+      "id": "framapic.org",
+      "name": "framapic.org",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/framapic.org.sxcu"
+    },
+    {
+      "id": "fred.moe",
+      "name": "fred.moe",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/fred.moe.sxcu"
+    },
+    {
+      "id": "freeimage.host",
+      "name": "freeimage.host",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/freeimage.host.sxcu"
+    },
+    {
+      "id": "fuck.it",
+      "name": "fuck.it",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/fuck.it.sxcu"
+    },
+    {
+      "id": "fuwa.se",
+      "name": "fuwa.se",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/fuwa.se.sxcu"
+    },
+    {
+      "id": "git.io",
+      "name": "git.io",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/git.io.sxcu"
+    },
+    {
+      "id": "glot.io (Anonymous)",
+      "name": "glot.io (Anonymous)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/glot.io (Anonymous).sxcu"
+    },
+    {
+      "id": "glot.io (User)",
+      "name": "glot.io (User)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/glot.io (User).sxcu"
+    },
+    {
+      "id": "gyazo.com",
+      "name": "gyazo.com",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/gyazo.com.sxcu"
+    },
+    {
+      "id": "hnng.moe (File uploader)",
+      "name": "hnng.moe (File uploader)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/hnng.moe (File uploader).sxcu"
+    },
+    {
+      "id": "hnng.moe (URL shortener)",
+      "name": "hnng.moe (URL shortener)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/hnng.moe (URL shortener).sxcu"
+    },
+    {
+      "id": "httpbin.org",
+      "name": "httpbin.org",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/httpbin.org.sxcu"
+    },
+    {
+      "id": "i-am.a-virg.in",
+      "name": "i-am.a-virg.in",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/i-am.a-virg.in.sxcu"
+    },
+    {
+      "id": "imgchest.com",
+      "name": "imgchest.com",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/imgchest.com.sxcu"
+    },
+    {
+      "id": "imgops.com",
+      "name": "imgops.com",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/imgops.com.sxcu"
+    },
+    {
+      "id": "imgup.net",
+      "name": "imgup.net",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/imgup.net.sxcu"
+    },
+    {
+      "id": "imgur.com",
+      "name": "imgur.com",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/imgur.com.sxcu"
+    },
+    {
+      "id": "ipfs.io",
+      "name": "ipfs.io",
+      "kinds": [
+        "image",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/ipfs.io.sxcu"
+    },
+    {
+      "id": "itmages.ru",
+      "name": "itmages.ru",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/itmages.ru.sxcu"
+    },
+    {
+      "id": "itsosticky.com",
+      "name": "itsosticky.com",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/itsosticky.com.sxcu"
+    },
+    {
+      "id": "ix.io",
+      "name": "ix.io",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/ix.io.sxcu"
+    },
+    {
+      "id": "jbcdn.net",
+      "name": "jbcdn.net",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/jbcdn.net.sxcu"
+    },
+    {
+      "id": "Jirafeau",
+      "name": "Jirafeau",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/Jirafeau.sxcu"
+    },
+    {
+      "id": "joplin",
+      "name": "Joplin",
+      "kinds": [
+        "text"
+      ],
+      "category": "archive",
+      "source": "aiti",
+      "auth": "token",
+      "recommended": false,
+      "note": "Joplin Web Clipper API on localhost:41184",
+      "status": "ok",
+      "file": "aiti/joplin.sxcu"
+    },
+    {
+      "id": "leo.immobilien",
+      "name": "leo.immobilien",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/leo.immobilien.sxcu"
+    },
+    {
+      "id": "LessnMore",
+      "name": "LessnMore",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/LessnMore.sxcu"
+    },
+    {
+      "id": "lewd.pics",
+      "name": "lewd.pics",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/lewd.pics.sxcu"
+    },
+    {
+      "id": "lewd.se",
+      "name": "lewd.se",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/lewd.se.sxcu"
+    },
+    {
+      "id": "lookpic.com",
+      "name": "lookpic.com",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/lookpic.com.sxcu"
+    },
+    {
+      "id": "lut.im",
+      "name": "lut.im",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/lut.im.sxcu"
+    },
+    {
+      "id": "magaimg.net",
+      "name": "magaimg.net",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/magaimg.net.sxcu"
+    },
+    {
+      "id": "memos",
+      "name": "Memos",
+      "kinds": [
+        "text"
+      ],
+      "category": "archive",
+      "source": "aiti",
+      "auth": "token",
+      "recommended": false,
+      "note": "Self-hosted memos on localhost:5230",
+      "status": "ok",
+      "file": "aiti/memos.sxcu"
+    },
+    {
+      "id": "miyako.xyz",
+      "name": "miyako.xyz",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/miyako.xyz.sxcu"
+    },
+    {
+      "id": "myfile.org",
+      "name": "myfile.org",
+      "kinds": [
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/myfile.org.sxcu"
+    },
+    {
+      "id": "needsmorejpeg.com",
+      "name": "needsmorejpeg.com",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/needsmorejpeg.com.sxcu"
+    },
+    {
+      "id": "obsidian-local-rest",
+      "name": "Obsidian Local REST",
+      "kinds": [
+        "text"
+      ],
+      "category": "archive",
+      "source": "aiti",
+      "auth": "token",
+      "recommended": false,
+      "note": "Obsidian Local REST plugin on localhost:27123",
+      "status": "ok",
+      "file": "aiti/obsidian-local-rest.sxcu"
+    },
+    {
+      "id": "oshi.at",
+      "name": "oshi.at",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/oshi.at.sxcu"
+    },
+    {
+      "id": "owo.vc",
+      "name": "owo.vc",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/owo.vc.sxcu"
+    },
+    {
+      "id": "p.ip.fi",
+      "name": "p.ip.fi",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/p.ip.fi.sxcu"
+    },
+    {
+      "id": "paste.kde.org (Sticky Notes)",
+      "name": "paste.kde.org (Sticky Notes)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/paste.kde.org (Sticky Notes).sxcu"
+    },
+    {
+      "id": "paste.scratchbook.ch (Stikked)",
+      "name": "paste.scratchbook.ch (Stikked)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/paste.scratchbook.ch (Stikked).sxcu"
+    },
+    {
+      "id": "paste.ubuntu.com",
+      "name": "paste.ubuntu.com",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/paste.ubuntu.com.sxcu"
+    },
+    {
+      "id": "pastebin",
+      "name": "Pastebin",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "aiti",
+      "auth": "token",
+      "recommended": false,
+      "note": "Free API key required",
+      "status": "ok",
+      "file": "aiti/pastebin.sxcu"
+    },
+    {
+      "id": "pasteboard.co",
+      "name": "pasteboard.co",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/pasteboard.co.sxcu"
+    },
+    {
+      "id": "pastefy.ga",
+      "name": "pastefy.ga",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/pastefy.ga.sxcu"
+    },
+    {
+      "id": "pi.gy",
+      "name": "pi.gy",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/pi.gy.sxcu"
+    },
+    {
+      "id": "pictshare.net",
+      "name": "pictshare.net",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/pictshare.net.sxcu"
+    },
+    {
+      "id": "pixeldrain.com",
+      "name": "pixeldrain.com",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/pixeldrain.com.sxcu"
+    },
+    {
+      "id": "pnsh.ga",
+      "name": "pnsh.ga",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/pnsh.ga.sxcu"
+    },
+    {
+      "id": "pomf.pl",
+      "name": "pomf.pl",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/pomf.pl.sxcu"
+    },
+    {
+      "id": "pomf.se",
+      "name": "pomf.se",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/pomf.se.sxcu"
+    },
+    {
+      "id": "prntscr.com",
+      "name": "prntscr.com",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/prntscr.com.sxcu"
+    },
+    {
+      "id": "ptpimg.me",
+      "name": "ptpimg.me",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/ptpimg.me.sxcu"
+    },
+    {
+      "id": "put.nu",
+      "name": "put.nu",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/put.nu.sxcu"
+    },
+    {
+      "id": "put.re",
+      "name": "put.re",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/put.re.sxcu"
+    },
+    {
+      "id": "put.tf",
+      "name": "put.tf",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/put.tf.sxcu"
+    },
+    {
+      "id": "puush.me",
+      "name": "puush.me",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/puush.me.sxcu"
+    },
+    {
+      "id": "questionable.link",
+      "name": "questionable.link",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/questionable.link.sxcu"
+    },
+    {
+      "id": "ratelimited.me",
+      "name": "ratelimited.me",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/ratelimited.me.sxcu"
+    },
+    {
+      "id": "ratelimited.me (Random)",
+      "name": "ratelimited.me (Random)",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/ratelimited.me (Random).sxcu"
+    },
+    {
+      "id": "rebrandly.com",
+      "name": "rebrandly.com",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/rebrandly.com.sxcu"
+    },
+    {
+      "id": "rentry",
+      "name": "Rentry",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "aiti",
+      "auth": "none",
+      "recommended": false,
+      "note": "Anonymous; may require browser cookie",
+      "status": "ok",
+      "file": "aiti/rentry.sxcu"
+    },
+    {
+      "id": "sadder.xyz",
+      "name": "sadder.wtf",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/sadder.xyz.sxcu"
+    },
+    {
+      "id": "screenshotting.site",
+      "name": "screenshotting.site",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/screenshotting.site.sxcu"
+    },
+    {
+      "id": "Shlink",
+      "name": "Shlink",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/Shlink.sxcu"
+    },
+    {
+      "id": "short.io",
+      "name": "short.io",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/short.io.sxcu"
+    },
+    {
+      "id": "shtn.pw",
+      "name": "shtn.pw",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/shtn.pw.sxcu"
+    },
+    {
+      "id": "siyuan",
+      "name": "SiYuan",
+      "kinds": [
+        "text"
+      ],
+      "category": "archive",
+      "source": "aiti",
+      "auth": "token",
+      "recommended": false,
+      "note": "SiYuan API on localhost:6806",
+      "status": "ok",
+      "file": "aiti/siyuan.sxcu"
+    },
+    {
+      "id": "sm.ms",
+      "name": "sm.ms",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/sm.ms.sxcu"
+    },
+    {
+      "id": "sm-ms",
+      "name": "SM.MS",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "aiti",
+      "auth": "token",
+      "recommended": false,
+      "note": "Token required; slow from mainland China",
+      "status": "ok",
+      "file": "aiti/sm-ms.sxcu"
+    },
+    {
+      "id": "sr.ht",
+      "name": "sr.ht",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/sr.ht.sxcu"
+    },
+    {
+      "id": "starfiles.co",
+      "name": "starfiles.co",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/starfiles.co.sxcu"
+    },
+    {
+      "id": "stepload.de",
+      "name": "stepload.de",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/stepload.de.sxcu"
+    },
+    {
+      "id": "support.discordapp.com",
+      "name": "support.discordapp.com",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/support.discordapp.com.sxcu"
+    },
+    {
+      "id": "teknik.io (File uploader)",
+      "name": "teknik.io (File uploader)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/teknik.io (File uploader).sxcu"
+    },
+    {
+      "id": "teknik.io (Text uploader)",
+      "name": "teknik.io (Text uploader)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/teknik.io (Text uploader).sxcu"
+    },
+    {
+      "id": "teknik.io (URL shortener)",
+      "name": "teknik.io (URL shortener)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/teknik.io (URL shortener).sxcu"
+    },
+    {
+      "id": "telegra.ph",
+      "name": "telegra.ph",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/telegra.ph.sxcu"
+    },
+    {
+      "id": "temp.sh",
+      "name": "temp.sh",
+      "kinds": [
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/temp.sh.sxcu"
+    },
+    {
+      "id": "tietuku.com",
+      "name": "tietuku.com",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/tietuku.com.sxcu"
+    },
+    {
+      "id": "tineye.com",
+      "name": "tineye.com",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/tineye.com.sxcu"
+    },
+    {
+      "id": "tinyimg.io",
+      "name": "tinyimg.io",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/tinyimg.io.sxcu"
+    },
+    {
+      "id": "tinyurl.com",
+      "name": "tinyurl.com",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/tinyurl.com.sxcu"
+    },
+    {
+      "id": "tmpfiles.org",
+      "name": "tmpfiles.org",
+      "kinds": [
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/tmpfiles.org.sxcu"
+    },
+    {
+      "id": "tny.im (w Keyword)",
+      "name": "tny.im (w Keyword)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/tny.im (w Keyword).sxcu"
+    },
+    {
+      "id": "transfer.sh",
+      "name": "transfer.sh",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "Long-term unreliable",
+      "status": "dead",
+      "file": "sharex/transfer.sh.sxcu"
+    },
+    {
+      "id": "ttm.sh (File uploader)",
+      "name": "ttm.sh (File uploader)",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/ttm.sh (File uploader).sxcu"
+    },
+    {
+      "id": "ttm.sh (URL shortener)",
+      "name": "ttm.sh (URL shortener)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/ttm.sh (URL shortener).sxcu"
+    },
+    {
+      "id": "txti.es",
+      "name": "txti.es",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/txti.es.sxcu"
+    },
+    {
+      "id": "uguu.se",
+      "name": "uguu.se",
+      "kinds": [
+        "file",
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "Intermittent 502",
+      "status": "legacy",
+      "file": "sharex/uguu.se.sxcu"
+    },
+    {
+      "id": "unsee.cc",
+      "name": "unsee.cc",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/unsee.cc.sxcu"
+    },
+    {
+      "id": "unserialize.com",
+      "name": "unserialize.com",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/unserialize.com.sxcu"
+    },
+    {
+      "id": "up.vidyagam.es",
+      "name": "up.vidyagam.es",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/up.vidyagam.es.sxcu"
+    },
+    {
+      "id": "up2sha.re (User)",
+      "name": "up2sha.re (User)",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/up2sha.re (User).sxcu"
+    },
+    {
+      "id": "upl.io",
+      "name": "upl.io",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/upl.io.sxcu"
+    },
+    {
+      "id": "uploadfiles.io",
+      "name": "uploadfiles.io",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/uploadfiles.io.sxcu"
+    },
+    {
+      "id": "uploadpie.com",
+      "name": "uploadpie.com",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/uploadpie.com.sxcu"
+    },
+    {
+      "id": "urlify.dev",
+      "name": "urlify.dev",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/urlify.dev.sxcu"
+    },
+    {
+      "id": "vee.gg",
+      "name": "vee.gg",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/vee.gg.sxcu"
+    },
+    {
+      "id": "verylegit.link",
+      "name": "verylegit.link",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/verylegit.link.sxcu"
+    },
+    {
+      "id": "vocaroo.com",
+      "name": "vocaroo.com",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/vocaroo.com.sxcu"
+    },
+    {
+      "id": "waa.ai",
+      "name": "waa.ai",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/waa.ai.sxcu"
+    },
+    {
+      "id": "whats-th.is",
+      "name": "whats-th.is",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/whats-th.is.sxcu"
+    },
+    {
+      "id": "whats-th.is (Random)",
+      "name": "whats-th.is (Random)",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/whats-th.is (Random).sxcu"
+    },
+    {
+      "id": "whats-th.is (URL shortener)",
+      "name": "whats-th.is (URL shortener)",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/whats-th.is (URL shortener).sxcu"
+    },
+    {
+      "id": "why-am-i-he.re",
+      "name": "why-am-i-he.re",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/why-am-i-he.re.sxcu"
+    },
+    {
+      "id": "write.as",
+      "name": "write.as",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/write.as.sxcu"
+    },
+    {
+      "id": "x0.at",
+      "name": "x0.at",
+      "kinds": [
+        "image",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/x0.at.sxcu"
+    },
+    {
+      "id": "yabumi.cc",
+      "name": "yabumi.cc",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/yabumi.cc.sxcu"
+    },
+    {
+      "id": "yandex.com",
+      "name": "yandex.com",
+      "kinds": [
+        "image"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/yandex.com.sxcu"
+    },
+    {
+      "id": "yourls.org",
+      "name": "yourls.org",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/yourls.org.sxcu"
+    },
+    {
+      "id": "zippyshare.com",
+      "name": "zippyshare.com",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/zippyshare.com.sxcu"
+    },
+    {
+      "id": "zws.im",
+      "name": "zws.im",
+      "kinds": [
+        "text"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "",
+      "status": "ok",
+      "file": "sharex/zws.im.sxcu"
+    }
+  ]
+}

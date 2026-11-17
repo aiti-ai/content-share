@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/**/*.ts", "types/*.d.ts"],
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": true,
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true,
+    "sourceMap": false,
+    "paths": {
+      "@aiti-ai/content-share": ["./src/index.ts"],
+      "@aiti-ai/content-share/*": ["./src/*.ts"]
+    }
+  }
+}

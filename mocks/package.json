@@ -1,0 +1,9 @@
+{
+  "name": "@aiti-ai/content-share-mocks",
+  "version": "0.1.0",
+  "description": "Offline mock/demo servers for @aiti-ai/content-share providers.",
+  "type": "module",
+  "bin": { "content-share-mock": "./src/paste-demo.ts" },
+  "files": ["src"],
+  "license": "MIT"
+}

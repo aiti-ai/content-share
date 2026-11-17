@@ -1,0 +1,11 @@
+{
+  "Name": "Pastebin",
+  "DestinationType": "TextUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "https://pastebin.com/api/api_post.php",
+  "Body": "FormURLEncoded",
+  "FileFormName": "api_paste_code",
+  "Arguments": { "api_dev_key": "<api_dev_key>", "api_user_key": "<api_user_key>", "api_option": "paste", "api_paste_private": "1", "api_paste_expire_date": "1M" },
+  "URL": "$regex:1$",
+  "RegexList": ["(https?://pastebin\\.com/\\w+)"]
+}

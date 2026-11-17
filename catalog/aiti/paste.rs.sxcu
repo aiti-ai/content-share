@@ -1,0 +1,9 @@
+{
+  "Name": "paste.rs",
+  "DestinationType": "TextUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "https://paste.rs/",
+  "Body": "Binary",
+  "URL": "$regex:1$",
+  "RegexList": ["(https?://paste\\.rs/\\w+)"]
+}

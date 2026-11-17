@@ -1,0 +1,9 @@
+{
+  "Name": "Obsidian Local REST",
+  "DestinationType": "TextUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "http://localhost:27123/vault/shares/{{filename}}.md",
+  "Body": "Binary",
+  "Headers": { "Authorization": "Bearer <token>" },
+  "URL": "obsidian://open?vault=vault&file=shares/{{filename}}.md"
+}

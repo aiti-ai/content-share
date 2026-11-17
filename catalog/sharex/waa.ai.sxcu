@@ -1,0 +1,11 @@
+{
+  "Version": "12.4.1",
+  "Name": "waa.ai",
+  "RequestMethod": "POST",
+  "RequestURL": "https://api.waa.ai/shorten",
+  "Body": "MultipartFormData",
+  "Arguments": {
+    "url": "$input$"
+  },
+  "URL": "$json:data.url$"
+}

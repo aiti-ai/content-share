@@ -1,0 +1,91 @@
+{
+  "local-link": {
+    "name": "Local link",
+    "category": "local",
+    "recommended": true,
+    "note": "No upload — creates a local session link"
+  },
+  "gitee-gist": {
+    "name": "Gitee Snippet",
+    "category": "publish",
+    "recommended": true,
+    "note": "China-friendly; personal access token with gists scope"
+  },
+  "lsky-pro": {
+    "name": "Lsky Pro",
+    "category": "publish",
+    "recommended": true,
+    "note": "Set your own endpoint in the target form"
+  },
+  "aliyun-oss": {
+    "name": "Alibaba Cloud OSS",
+    "category": "publish",
+    "recommended": true,
+    "note": "V1 signed; object key prefix acts as directory"
+  },
+  "paste.rs": {
+    "recommended": true,
+    "note": "Anonymous text paste"
+  },
+  "catbox.moe": {
+    "recommended": true,
+    "note": "Anonymous & permanent; slow from mainland China"
+  },
+  "imgbb.com": {
+    "recommended": true,
+    "note": "Free API key from api.imgbb.com"
+  },
+  "gofile.io": {
+    "recommended": true,
+    "note": "Anonymous file host"
+  },
+  "joplin": {
+    "category": "archive",
+    "note": "Joplin Web Clipper API on localhost:41184"
+  },
+  "obsidian-local-rest": {
+    "category": "archive",
+    "note": "Obsidian Local REST plugin on localhost:27123"
+  },
+  "memos": {
+    "category": "archive",
+    "note": "Self-hosted memos on localhost:5230"
+  },
+  "siyuan": {
+    "category": "archive",
+    "note": "SiYuan API on localhost:6806"
+  },
+  "flomo": {
+    "category": "archive",
+    "note": "Flomo webhook"
+  },
+  "pastebin": {
+    "note": "Free API key required"
+  },
+  "rentry": {
+    "note": "Anonymous; may require browser cookie"
+  },
+  "sm-ms": {
+    "note": "Token required; slow from mainland China"
+  },
+  "anonfiles": {
+    "status": "dead",
+    "note": "Service discontinued"
+  },
+  "transfer.sh": {
+    "status": "dead",
+    "note": "Long-term unreliable"
+  },
+  "0x0.st (Image uploader)": {
+    "status": "legacy",
+    "note": "Intermittent 500 / Cloudflare challenge"
+  },
+  "uguu.se": {
+    "status": "legacy",
+    "note": "Intermittent 502"
+  },
+  "api.anonfiles.com": {
+    "status": "dead",
+    "note": "Service discontinued"
+  }
+}

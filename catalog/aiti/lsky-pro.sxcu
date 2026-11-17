@@ -1,0 +1,12 @@
+{
+  "Name": "Lsky Pro",
+  "DestinationType": "ImageUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "https://lsky.example.com/api/v1/images",
+  "Body": "MultipartFormData",
+  "FileFormName": "file",
+  "Arguments": { "strategy_id": "0" },
+  "Headers": { "Authorization": "Bearer <token>", "Accept": "application/json" },
+  "URL": "$json:data.links.url$",
+  "DeletionURL": "$json:data.links.deletion_url$"
+}

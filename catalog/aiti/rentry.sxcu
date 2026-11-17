@@ -1,0 +1,11 @@
+{
+  "Name": "Rentry",
+  "DestinationType": "TextUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "https://rentry.co/api/new",
+  "Body": "FormURLEncoded",
+  "FileFormName": "text",
+  "Arguments": { "csrfmiddlewaretoken": "undefined" },
+  "Headers": { "Referer": "https://rentry.co/" },
+  "URL": "$json:url$"
+}
