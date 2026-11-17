@@ -2,9 +2,9 @@
   "Name": "Joplin",
   "DestinationType": "TextUploader",
   "RequestMethod": "POST",
-  "RequestURL": "http://localhost:41184/services/share?token=<token>",
+  "RequestURL": "http://localhost:41184/notes?token=<token>",
   "Body": "JSON",
   "Data": "{\"title\":\"{{title}}\",\"body\":\"{{content}}\"}",
   "Headers": { "Content-Type": "application/json" },
-  "URL": "joplin://openNote?id=$json:id$"
+  "URL": "joplin://x-callback-url/openNote?id=$json:id$"
 }
