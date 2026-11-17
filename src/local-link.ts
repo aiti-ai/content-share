@@ -9,7 +9,7 @@ export function localLinkProvider(): ShareProvider {
     category: "local",
     maxBytes: 1024 * 1024,
     metaFields: [
-      { key: "baseUrl", label: "pi-web base URL", type: "text", required: true, hint: "e.g. https://pi.alot.pw:57442/dev" },
+      { key: "baseUrl", label: "pi-web base URL", type: "text", required: true, hint: "e.g. https://your-pi-web-host/" },
       { key: "sessionId", label: "Session id", type: "text", required: false },
       { key: "messageId", label: "Message id (anchor)", type: "text", required: false },
     ],
