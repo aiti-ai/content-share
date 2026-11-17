@@ -2,7 +2,7 @@
 
 > 按 provider 分享内容——从内容到 URL。内置 161 个目标（ShareX `.sxcu` 全量目录 + 国内直连服务 + 笔记库），统一由零依赖引擎执行。
 
-[English](./README.md) · 简体中文
+[English](../README.md) · 简体中文
 
 ## 关于 aiti
 
@@ -102,4 +102,4 @@ npm run verify           # typecheck + 测试 + 构建 + 目录可重现性
 
 MIT。`.sxcu` 语法语义由 [ShareX](https://github.com/ShareX/ShareX)（GPL v3）独立重实现推导，未包含其源码。`.sxcu` 配置从公开的 ShareX/CustomUploaders 仓再分发。
 
-[English](./README.md)
+[English](../README.md)

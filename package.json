@@ -1,6 +1,6 @@
 {
   "name": "@aiti-ai/content-share",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Provider-based content sharing: upload text, images or files to paste bins, image hosts, object storage and note archives, then return a shareable URL. SXCU catalog compatible (148 ShareX configs), zero runtime dependencies.",
   "type": "module",
   "exports": {
@@ -20,7 +20,6 @@
     "mocks/src",
     "docs",
     "README.md",
-    "README.zh-CN.md",
     "CHANGELOG.md"
   ],
   "bin": {

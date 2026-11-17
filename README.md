@@ -2,7 +2,7 @@
 
 > Provider-based content sharing — from content to URL. 161 built-in targets (the full ShareX `.sxcu` catalog + China-friendly services + note archives) behind one dependency-free engine.
 
-English · [简体中文](./README.zh-CN.md)
+English · [简体中文](./docs/README.zh-CN.md)
 
 ## About aiti
 
@@ -102,4 +102,4 @@ npm run verify           # typecheck + tests + build + catalog reproducibility
 
 MIT. The `.sxcu` syntax semantics are derived from [ShareX](https://github.com/ShareX/ShareX) (GPL v3) by independent reimplementation — no ShareX source code is included. `.sxcu` configs are redistributed from the public ShareX/CustomUploaders repository.
 
-[简体中文](./README.zh-CN.md)
+[简体中文](./docs/README.zh-CN.md)
