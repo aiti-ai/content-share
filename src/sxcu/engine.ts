@@ -23,16 +23,18 @@ export function detectValueFields(config: SxcuConfig): string[] {
   const scan = (text: string | undefined) => {
     for (const m of String(text || "").matchAll(/<([A-Za-z0-9 _.\-]+)>/g)) {
       const name = m[1]!.trim();
-      if (/^(API KEY|.*KEY HERE|.*TOKEN HERE|<.*)$/i.test(name) || /key|token|password|secret/i.test(name)) {
-        fields.add(name.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, ""));
-      }
+      // Any <placeholder> in a request template must be filled by the user —
+      // otherwise the literal text would be sent (e.g. flomo's <webhook_id>).
+      // Keep filtering out obvious prose placeholders that are not field names.
+      if (!name || /^https?$/i.test(name)) continue;
+      fields.add(name.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, ""));
     }
   };
   scan(config.RequestURL); scan(config.Data);
   Object.values(config.Parameters || {}).forEach(scan);
   Object.values(config.Headers || {}).forEach(scan);
   Object.values(config.Arguments || {}).forEach(scan);
-  return Array.from(fields);
+  return Array.from(fields).filter(Boolean);
 }
 
 function contentText(content: ShareContent, hooks?: ShareHooks, meta?: Record<string, string>): string {

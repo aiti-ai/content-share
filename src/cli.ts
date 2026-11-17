@@ -47,11 +47,41 @@ if (cmd === "list") {
     { title: flags.get("title") || "", tags: flags.get("tags") || "" });
   console.log(result.url);
   if (result.extra?.deletionUrl) console.log(`delete: ${result.extra.deletionUrl}`);
+} else if (cmd === "import-sxcu") {
+  // Validate a .sxcu config and register it in-process (prints the provider id).
+  const filePath = args[1];
+  if (!filePath) { console.error("usage: content-share import-sxcu <file.sxcu> [--id <id>]"); process.exit(1); }
+  const raw = await readFile(filePath, "utf8");
+  let config;
+  try { config = JSON.parse(raw); } catch { console.error("invalid JSON"); process.exit(1); }
+  if (!config?.RequestURL) { console.error("invalid .sxcu: missing RequestURL"); process.exit(1); }
+  const r = await registry();
+  const id = (args.includes("--id") ? args[args.indexOf("--id") + 1] : null)
+    || `user-${String(config.Name || "sxcu").toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+  r.addEntry({ id, name: config.Name || id, kinds: ["text"], category: "publish", source: "user", auth: "none" }, config);
+  const p = r.get(id)!;
+  console.log(`imported: ${id}`);
+  console.log(`  name:   ${p.label}`);
+  console.log(`  kinds:  ${p.kinds.join("/")}`);
+  console.log(`  fields: ${p.metaFields.map((f) => f.key).join(", ") || "(none — anonymous)"}`);
+  console.log(`  body:   ${config.Body || "MultipartFormData"}`);
+  console.log(`  url:    ${config.URL || "(first URL in response)"}`);
+} else if (cmd === "mock") {
+  // Start a bundled demo/mock server (reference implementation of the custom-http provider).
+  const which = args[1] || "paste-demo";
+  const port = args.includes("--port") ? args[args.indexOf("--port") + 1] : "8931";
+  if (which !== "paste-demo") { console.error(`unknown mock: ${which} (available: paste-demo)`); process.exit(1); }
+  const { spawn } = await import("node:child_process");
+  const script = new URL("../mocks/src/paste-demo.ts", import.meta.url).pathname;
+  const child = spawn(process.execPath, [script, String(port)], { stdio: "inherit" });
+  child.on("exit", (code) => process.exit(code ?? 0));
 } else {
   console.log(`@aiti-ai/content-share
 Usage:
   content-share list [text|image|file]      List providers
   content-share share --provider <id> [--file f | --text t] [--title T] [--tags a,b] [--<field> value...]
+  content-share import-sxcu <file.sxcu> [--id id]   Validate + inspect a config
+  content-share mock [paste-demo] [--port 8931]     Start the demo paste server
   content-share help                        This help
 `);
 }
