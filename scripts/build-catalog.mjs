@@ -48,6 +48,8 @@ for (const id of ["local-link", "aliyun-oss"]) {
   });
 }
 entries.sort((a, b) => Number(!!b.recommended) - Number(!!a.recommended) || a.name.localeCompare(b.name));
-const out = { version: 1, generatedAt: new Date().toISOString(), count: entries.length, entries };
+// No timestamp on purpose: the index must be reproducible so CI can assert
+// `git diff --exit-code` after rebuilding it.
+const out = { version: 1, count: entries.length, entries };
 await writeFile(new URL("./index.json", root), JSON.stringify(out, null, 2) + "\n");
 console.log(`catalog built: ${entries.length} entries (${entries.filter((e) => e.recommended).length} recommended)`);
