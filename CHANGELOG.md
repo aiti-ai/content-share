@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.8 (2026-11-19)
+
+- Multilingual catalog data: `CatalogEntry.note` / overlay notes accept a zh/en pair (`LocalizedText`), so remote catalogs can carry bilingual copy.
+- `loadOverlay` accepts the published audit document (aiti.pw /share-targets.json `providers`/`setupProviders`/`labels` shape) in addition to the classic overlay: verdicts dead/vpn-unreachable/template map to status "dead", bilingual notes and labels pass through. New export `overlayFromDoc`.
+
 ## 0.1.7 (2026-11-19)
 
 - Catalog: mark 44 targets dead from the 2026-11 upload audit — 26 with no DNS resolution (bakka.me, glot.io snippets, dtransfer.net, hnng.moe, tietuku.com, uploadfiles.io, git.io retirement, …) and 18 unreachable even via VPN routing (aboo.se, oshi.at, paste.ubuntu.com, ttm.sh, …). Registry no longer instantiates providers for dead entries (113 usable targets remain); they stay listed greyed-out in target managers.

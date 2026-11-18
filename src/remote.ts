@@ -5,12 +5,14 @@
  */
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { join } from "node:path";
-import type { CatalogEntry } from "./types.ts";
+import type { CatalogEntry, LocalizedText } from "./types.ts";
 
 export interface RemoteOverlay {
   recommended?: string[];
   status?: Record<string, CatalogEntry["status"]>;
-  note?: Record<string, string>;
+  note?: Record<string, LocalizedText>;
+  /** Bilingual display labels shared by all entries (verdicts / availability states). */
+  labels?: Record<string, LocalizedText>;
   entries?: CatalogEntry[];
 }
 
@@ -28,6 +30,32 @@ export interface RemoteResult {
 }
 
 let inflight: Promise<RemoteResult> | null = null;
+
+/**
+ * Accept both overlay shapes at the remote URL:
+ *  - classic: { recommended?, status?, note?, labels?, entries? }
+ *  - published audit doc (aiti.pw /share-targets.json): { providers: [{ id, verdict, note, ... }], setupProviders?, labels? }
+ *    → verdict "dead"/"vpn-unreachable"/"template" map to status "dead"; bilingual notes pass through.
+ */
+export function overlayFromDoc(doc: unknown): RemoteOverlay {
+  const d = doc as Record<string, unknown>;
+  if (!Array.isArray(d?.providers)) return (doc as RemoteOverlay) ?? {};
+  const DEAD_VERDICTS = new Set(["dead", "vpn-unreachable", "template"]);
+  const status: Record<string, CatalogEntry["status"]> = {};
+  const note: Record<string, LocalizedText> = {};
+  for (const raw of d.providers as Array<Record<string, unknown>>) {
+    const id = String(raw?.id || "");
+    if (!id) continue;
+    if (DEAD_VERDICTS.has(String(raw?.verdict))) status[id] = "dead";
+    if (raw?.note) note[id] = raw.note as LocalizedText;
+  }
+  for (const raw of (Array.isArray(d?.setupProviders) ? d.setupProviders : []) as Array<Record<string, unknown>>) {
+    const id = String(raw?.id || "");
+    if (id && raw?.note) note[id] = raw.note as LocalizedText;
+  }
+  const labels = (d?.labels ?? undefined) as Record<string, LocalizedText> | undefined;
+  return { status, note, ...(labels ? { labels } : {}) };
+}
 
 async function readCache(file: string): Promise<RemoteResult | null> {
   try {
@@ -48,7 +76,7 @@ export async function loadOverlay(opts: RemoteOptions, force = false): Promise<R
     try {
       const r = await (opts.fetchImpl ?? fetch)(opts.url, { signal: AbortSignal.timeout(8000) });
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      const overlay = await r.json() as RemoteOverlay;
+      const overlay = overlayFromDoc(await r.json());
       await mkdir(opts.cacheDir, { recursive: true });
       await writeFile(file, JSON.stringify({ at: Date.now(), overlay }));
       return { overlay, source: "network", ageMs: 0 };

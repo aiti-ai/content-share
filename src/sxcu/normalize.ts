@@ -8,7 +8,7 @@ export interface NormalizeOptions {
   category?: ShareProvider["category"];
   maxBytes?: number;
   probe?: ShareProvider["probe"];
-  note?: string;
+  note?: import("../types.ts").LocalizedText;
 }
 
 const HOST_LABELS: Record<string, string> = {

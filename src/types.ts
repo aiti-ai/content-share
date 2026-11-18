@@ -85,6 +85,9 @@ export interface SxcuConfig {
   ErrorMessage?: string;
 }
 
+/** Bilingual display text: plain string (single language) or zh/en pair. */
+export type LocalizedText = string | { zh?: string; en?: string };
+
 export interface CatalogEntry {
   id: string;
   name: string;
@@ -93,7 +96,7 @@ export interface CatalogEntry {
   source: "sharex" | "aiti" | "user";
   auth: "none" | "token" | "key";
   recommended?: boolean;
-  note?: string;
+  note?: LocalizedText;
   status?: "ok" | "legacy" | "dead" | "unknown";
   file?: string;
   code?: boolean;
