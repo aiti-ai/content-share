@@ -174,8 +174,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/aboo.se.sxcu"
     },
     {
@@ -204,8 +204,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/aww.moe.sxcu"
     },
     {
@@ -218,8 +218,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/bakka.me.sxcu"
     },
     {
@@ -288,8 +288,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/cancer-co.de.sxcu"
     },
     {
@@ -302,8 +302,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/capella.pics.sxcu"
     },
     {
@@ -360,8 +360,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/cockfile.com.sxcu"
     },
     {
@@ -375,8 +375,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/digitaaldelen.nl.sxcu"
     },
     {
@@ -447,8 +447,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/dnlk.de.sxcu"
     },
     {
@@ -493,8 +493,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/dtransfer.net (Anonymous).sxcu"
     },
     {
@@ -509,8 +509,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/dtransfer.net (User).sxcu"
     },
     {
@@ -598,8 +598,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/file.bin.moe (Image uploader).sxcu"
     },
     {
@@ -612,8 +612,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/file.bin.moe (URL shortener).sxcu"
     },
     {
@@ -658,8 +658,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/file.wine.sxcu"
     },
     {
@@ -690,8 +690,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/files.httpreq.club.sxcu"
     },
     {
@@ -776,8 +776,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/fuwa.se.sxcu"
     },
     {
@@ -790,8 +790,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "GitHub retired the git.io shortener (2022)",
+      "status": "dead",
       "file": "sharex/git.io.sxcu"
     },
     {
@@ -804,8 +804,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "glot.io snippets shut down; snippets.glot.io no longer resolves",
+      "status": "dead",
       "file": "sharex/glot.io (Anonymous).sxcu"
     },
     {
@@ -818,8 +818,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "glot.io snippets shut down; snippets.glot.io no longer resolves",
+      "status": "dead",
       "file": "sharex/glot.io (User).sxcu"
     },
     {
@@ -846,8 +846,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "www.hnng.moe no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/hnng.moe (File uploader).sxcu"
     },
     {
@@ -860,8 +860,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "www.hnng.moe no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/hnng.moe (URL shortener).sxcu"
     },
     {
@@ -888,8 +888,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/i-am.a-virg.in.sxcu"
     },
     {
@@ -973,8 +973,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/itmages.ru.sxcu"
     },
     {
@@ -987,8 +987,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/itsosticky.com.sxcu"
     },
     {
@@ -1061,8 +1061,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/leo.immobilien.sxcu"
     },
     {
@@ -1105,8 +1105,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/lewd.se.sxcu"
     },
     {
@@ -1133,8 +1133,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/lut.im.sxcu"
     },
     {
@@ -1147,8 +1147,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/magaimg.net.sxcu"
     },
     {
@@ -1235,8 +1235,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/oshi.at.sxcu"
     },
     {
@@ -1291,8 +1291,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/paste.scratchbook.ch (Stikked).sxcu"
     },
     {
@@ -1305,8 +1305,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/paste.ubuntu.com.sxcu"
     },
     {
@@ -1361,8 +1361,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/pi.gy.sxcu"
     },
     {
@@ -1405,8 +1405,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/pnsh.ga.sxcu"
     },
     {
@@ -1551,8 +1551,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/ratelimited.me.sxcu"
     },
     {
@@ -1567,8 +1567,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/ratelimited.me (Random).sxcu"
     },
     {
@@ -1625,8 +1625,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/screenshotting.site.sxcu"
     },
     {
@@ -1753,8 +1753,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/stepload.de.sxcu"
     },
     {
@@ -1853,8 +1853,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "up.tietuku.com no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/tietuku.com.sxcu"
     },
     {
@@ -1953,8 +1953,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/ttm.sh (File uploader).sxcu"
     },
     {
@@ -1967,8 +1967,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline",
+      "status": "dead",
       "file": "sharex/ttm.sh (URL shortener).sxcu"
     },
     {
@@ -2010,8 +2010,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/unsee.cc.sxcu"
     },
     {
@@ -2040,8 +2040,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/up.vidyagam.es.sxcu"
     },
     {
@@ -2084,8 +2084,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "up.uploadfiles.io no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/uploadfiles.io.sxcu"
     },
     {
@@ -2154,8 +2154,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Upload endpoint s1.vocaroo.com no longer resolves (vocaroo.com itself is alive)",
+      "status": "dead",
       "file": "sharex/vocaroo.com.sxcu"
     },
     {
@@ -2228,8 +2228,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Domain no longer resolves (2026-11 upload audit)",
+      "status": "dead",
       "file": "sharex/why-am-i-he.re.sxcu"
     },
     {

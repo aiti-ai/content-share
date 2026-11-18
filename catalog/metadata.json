@@ -87,5 +87,181 @@
   "api.anonfiles.com": {
     "status": "dead",
     "note": "Service discontinued"
+  },
+  "bakka.me": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "cancer-co.de": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "capella.pics": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "dtransfer.net (Anonymous)": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "dtransfer.net (User)": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "files.httpreq.club": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "fuwa.se": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "git.io": {
+    "status": "dead",
+    "note": "GitHub retired the git.io shortener (2022)"
+  },
+  "glot.io (Anonymous)": {
+    "status": "dead",
+    "note": "glot.io snippets shut down; snippets.glot.io no longer resolves"
+  },
+  "glot.io (User)": {
+    "status": "dead",
+    "note": "glot.io snippets shut down; snippets.glot.io no longer resolves"
+  },
+  "hnng.moe (File uploader)": {
+    "status": "dead",
+    "note": "www.hnng.moe no longer resolves (2026-11 upload audit)"
+  },
+  "hnng.moe (URL shortener)": {
+    "status": "dead",
+    "note": "www.hnng.moe no longer resolves (2026-11 upload audit)"
+  },
+  "i-am.a-virg.in": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "itmages.ru": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "leo.immobilien": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "magaimg.net": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "pi.gy": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "pnsh.ga": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "ratelimited.me": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "ratelimited.me (Random)": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "tietuku.com": {
+    "status": "dead",
+    "note": "up.tietuku.com no longer resolves (2026-11 upload audit)"
+  },
+  "unsee.cc": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "up.vidyagam.es": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "uploadfiles.io": {
+    "status": "dead",
+    "note": "up.uploadfiles.io no longer resolves (2026-11 upload audit)"
+  },
+  "vocaroo.com": {
+    "status": "dead",
+    "note": "Upload endpoint s1.vocaroo.com no longer resolves (vocaroo.com itself is alive)"
+  },
+  "why-am-i-he.re": {
+    "status": "dead",
+    "note": "Domain no longer resolves (2026-11 upload audit)"
+  },
+  "aboo.se": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "aww.moe": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "cockfile.com": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "digitaaldelen.nl": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "dnlk.de": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "file.bin.moe (Image uploader)": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "file.bin.moe (URL shortener)": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "file.wine": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "itsosticky.com": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "lewd.se": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "lut.im": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "oshi.at": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "paste.scratchbook.ch (Stikked)": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "paste.ubuntu.com": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "screenshotting.site": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "stepload.de": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "ttm.sh (File uploader)": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "ttm.sh (URL shortener)": {
+    "status": "dead",
+    "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
   }
 }
