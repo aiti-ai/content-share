@@ -59,8 +59,10 @@ export function overlayFromDoc(doc: unknown): RemoteOverlay {
 
 async function readCache(file: string): Promise<RemoteResult | null> {
   try {
-    const raw = JSON.parse(await readFile(file, "utf8")) as { at: number; overlay: RemoteOverlay };
-    return { overlay: raw.overlay, source: "cache", ageMs: Date.now() - raw.at };
+    const raw = JSON.parse(await readFile(file, "utf8")) as { at: number; overlay: unknown };
+    // Normalize on read too: a cache written by an older version may hold the
+    // raw audit document (written before overlayFromDoc existed).
+    return { overlay: overlayFromDoc(raw.overlay), source: "cache", ageMs: Date.now() - raw.at };
   } catch { return null; }
 }
 
