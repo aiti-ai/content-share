@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.9 (2026-11-19)
+
+- loadOverlay logs the failure reason (network/cert/parse) instead of silently falling back to the bundled catalog.
+
 ## 0.1.8 (2026-11-19)
 
 - Multilingual catalog data: `CatalogEntry.note` / overlay notes accept a zh/en pair (`LocalizedText`), so remote catalogs can carry bilingual copy.

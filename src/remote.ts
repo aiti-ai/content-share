@@ -82,7 +82,10 @@ export async function loadOverlay(opts: RemoteOptions, force = false): Promise<R
       await mkdir(opts.cacheDir, { recursive: true });
       await writeFile(file, JSON.stringify({ at: Date.now(), overlay }));
       return { overlay, source: "network", ageMs: 0 };
-    } catch {
+    } catch (err) {
+      // Surface the reason (network/cert/parse) — silent failure here looks
+      // exactly like "overlay didn't apply" downstream.
+      console.warn(`[content-share] overlay load failed (${opts.url}):`, err instanceof Error ? err.message : err);
       return cached || { overlay: {}, source: "none" };
     }
   })();
