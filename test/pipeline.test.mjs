@@ -98,3 +98,27 @@ test("engine: Binary body passes bytes through uncorrupted", async () => {
     void result;
   } finally { await mock.close(); }
 });
+
+test("engine: empty extracted URL parameter fails instead of returning a dead link", async () => {
+  const mock = await bufferServer((_req, res) => { res.writeHead(200); res.end("\nacc89f\n"); });
+  try {
+    await assert.rejects(
+      () => executeSxcu({
+        Name: "EmptyParam", DestinationType: "ImageUploader",
+        RequestMethod: "POST", RequestURL: `${mock.base}/u`, Body: "MultipartFormData", FileFormName: "f",
+        RegexList: ["(.*)\\n(.*)\\n"], URL: "https://e.test/f.php?h=$regex:1|1$",
+      }, { buffer: new Uint8Array([1, 2]), filename: "a.png", mime: "image/png" }, { provider: "x", values: {} }),
+      /empty URL parameter/,
+    );
+    // Same shape with a real id still succeeds.
+    const s2 = await bufferServer((_req, res) => { res.writeHead(200); res.end("realid\ncode\n"); });
+    try {
+      const r = await executeSxcu({
+        Name: "OkParam", DestinationType: "ImageUploader",
+        RequestMethod: "POST", RequestURL: `${s2.base}/u`, Body: "MultipartFormData", FileFormName: "f",
+        RegexList: ["(.*)\\n(.*)\\n"], URL: "https://e.test/f.php?h=$regex:1|1$",
+      }, { buffer: new Uint8Array([1, 2]), filename: "a.png", mime: "image/png" }, { provider: "x", values: {} });
+      assert.equal(r.url, "https://e.test/f.php?h=realid");
+    } finally { await s2.close(); }
+  } finally { await mock.close(); }
+});

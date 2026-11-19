@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.11 (2026-11-19)
+
+- Engine: a template-extracted URL with an empty parameter value (e.g. `?h=`) now fails with a clear error instead of returning an unusable share link.
+
 ## 0.1.10 (2026-11-19)
 
 - share() now validates the content kind against provider.kinds and fails fast with a "kind mismatch" error (image buffer to a text-only target etc.).

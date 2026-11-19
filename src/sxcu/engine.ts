@@ -186,6 +186,12 @@ export async function executeSxcu(
     if (!/^https?:\/\//i.test(candidate)) throw new Error(`[${config.Name || "sxcu"}] no URL in response`);
     return { url: candidate };
   }
+  // A template-extracted URL with an empty parameter value (e.g. "?h=") means the
+  // extraction matched an empty response field — that link is unusable; fail
+  // instead of reporting a broken share.
+  if (/(?:\?|&)[A-Za-z0-9_.%-]*=(?:$|[&?])/.test(urlOut)) {
+    throw new Error(`[${config.Name || "sxcu"}] empty URL parameter (response did not carry the expected id): ${urlOut}`);
+  }
   const result: ShareResult = { url: urlOut };
   const del = applySyntax(config.DeletionURL, ctx).trim();
   const thumb = applySyntax(config.ThumbnailURL, ctx).trim();
