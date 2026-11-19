@@ -121,7 +121,13 @@ export async function executeSxcu(
     if ("buffer" in content) {
       form.set(config.FileFormName || "file", new Blob([new Uint8Array(content.buffer)], { type: content.mime }), filename);
       ctxBase.input = new TextDecoder().decode(content.buffer);
+    } else if (config.FileFormName) {
+      // File-style text target (catbox/ttm.sh style): ShareX writes the text to a
+      // temp file and uploads it via FileFormName — a plain form field here would
+      // hit "no files given" style errors.
+      form.set(config.FileFormName, new Blob([text], { type: "text/plain" }), filename || "share.txt");
     } else {
+      // Field-style paste target (bpaste/dpaste style): text travels in Arguments.
       form.set(config.FileFormName || "file", text);
     }
     init.body = form;
@@ -153,7 +159,9 @@ export async function executeSxcu(
     headers["content-type"] = bodyType === "JSON" ? "application/json" : "application/xml";
     init.body = raw;
   } else {
-    init.body = "text" in content ? text : Buffer.from(content.buffer).toString("binary");
+    // Binary body: pass bytes as-is — latin1 string round-trips would corrupt
+    // any byte >= 0x80 once undici utf8-encodes the body string.
+    init.body = "text" in content ? text : new Uint8Array(content.buffer);
   }
 
   const response = await fetchFn(url, { ...init, signal: AbortSignal.timeout(options.timeoutMs ?? 30000) });

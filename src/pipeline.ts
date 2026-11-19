@@ -1,8 +1,14 @@
 /** Shared upload pipeline: validate → transform hook → provider.upload. */
-import type { ShareContent, ShareHooks, ShareProvider, ShareResult, TargetConfig } from "./types.ts";
+import type { ContentKind, ShareContent, ShareHooks, ShareProvider, ShareResult, TargetConfig } from "./types.ts";
 
 export interface PipelineResult extends ShareResult {
   hits?: Array<{ rule: string; count: number }>;
+}
+
+/** Infer the content kind from the payload shape (image/* mime → image, buffer → file). */
+export function contentKindOf(content: ShareContent): ContentKind {
+  if ("text" in content) return "text";
+  return /^image\//i.test(content.mime) ? "image" : "file";
 }
 
 export async function share(
@@ -12,6 +18,12 @@ export async function share(
   meta: Record<string, string> = {},
   hooks?: ShareHooks,
 ): Promise<PipelineResult> {
+  // Kind guard: sending an image buffer to a text-only target (or vice versa)
+  // would produce garbage on the remote service — fail fast with a clear error.
+  const kind = contentKindOf(content);
+  if (provider.kinds?.length && !provider.kinds.includes(kind)) {
+    throw new Error(`kind mismatch: ${provider.id} accepts [${provider.kinds.join("/")}] but content is ${kind}`);
+  }
   const size = "text" in content ? Buffer.byteLength(content.text, "utf8") : content.buffer.byteLength;
   if (size > provider.maxBytes) {
     throw new Error(`Content too large: ${size} bytes > ${provider.maxBytes} bytes (${provider.id})`);

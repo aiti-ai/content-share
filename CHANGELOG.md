@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.10 (2026-11-19)
+
+- share() now validates the content kind against provider.kinds and fails fast with a "kind mismatch" error (image buffer to a text-only target etc.).
+- .sxcu engine: text content uploaded to a config with an explicit FileFormName now goes out as a real text/plain file part (ShareX temp-file semantics) instead of a plain form field — fixes "no files given"-style rejections on file-style text hosts (catbox, pomf family, ...).
+- Binary body payloads pass through byte-exact (Uint8Array) — the latin1 string round-trip corrupted bytes >= 0x80.
+
 ## 0.1.9 (2026-11-19)
 
 - loadOverlay logs the failure reason (network/cert/parse) instead of silently falling back to the bundled catalog.
