@@ -55,7 +55,9 @@ async function fetchPage(spec: ContainerSpec, url: string, values: Vals): Promis
 
 function toContainer(item: any, spec: ContainerSpec, parent?: string, path?: string): Container {
   const idKey = spec.idField || "id";
-  const label = String(item[spec.labelField || "title"] ?? item["name"] ?? item[idKey] ?? "");
+  // Service titles may carry control chars (Joplin appends \r to folder titles) —
+  // display labels must be clean.
+  const label = String(item[spec.labelField || "title"] ?? item["name"] ?? item[idKey] ?? "").trim();
   const out: Container = { id: String(item[idKey] ?? ""), label };
   if (parent) out.parent = parent;
   if (path) out.path = path;
@@ -77,7 +79,7 @@ async function listTree(spec: ContainerSpec, values: Vals): Promise<Container[]>
   const labelKey = spec.labelField || "title";
   const parentKey = spec.parentField!;
   const byId = new Map(all.map((it) => [String(it[idKey]), it]));
-  const labelOf = (it: any): string => String(it[labelKey] ?? it["name"] ?? it[idKey] ?? "");
+  const labelOf = (it: any): string => String(it[labelKey] ?? it["name"] ?? it[idKey] ?? "").trim();
   const pathOf = (it: any, seen = new Set<string>()): string => {
     const id = String(it[idKey]);
     const pid = it[parentKey] != null && it[parentKey] !== "" ? String(it[parentKey]) : "";
