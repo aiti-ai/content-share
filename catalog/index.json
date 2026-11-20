@@ -19,22 +19,6 @@
       "code": true
     },
     {
-      "id": "catbox.moe",
-      "name": "catbox.moe",
-      "kinds": [
-        "image",
-        "text",
-        "file"
-      ],
-      "category": "publish",
-      "source": "sharex",
-      "auth": "none",
-      "recommended": true,
-      "note": "Anonymous & permanent; slow from mainland China",
-      "status": "ok",
-      "file": "sharex/catbox.moe.sxcu"
-    },
-    {
       "id": "gitee-gist",
       "name": "Gitee Snippet",
       "kinds": [
@@ -274,8 +258,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Moved to bpa.st; the create form is XSRF-protected — an .sxcu cannot drive it, needs a dedicated code provider",
+      "status": "legacy",
       "file": "sharex/bpaste.net.sxcu"
     },
     {
@@ -305,6 +289,22 @@
       "note": "Domain no longer resolves (2026-11 upload audit)",
       "status": "dead",
       "file": "sharex/capella.pics.sxcu"
+    },
+    {
+      "id": "catbox.moe",
+      "name": "catbox.moe",
+      "kinds": [
+        "image",
+        "text",
+        "file"
+      ],
+      "category": "publish",
+      "source": "sharex",
+      "auth": "none",
+      "recommended": false,
+      "note": "API rejecting uploads with 'Invalid uploader' since 2026-11 (service alive — under observation)",
+      "status": "ok",
+      "file": "sharex/catbox.moe.sxcu"
     },
     {
       "id": "catgirlsare.sexy",
@@ -718,8 +718,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Framapic decommissioned — redirects to alt.framasoft.org/framapic/ (2026-11 audit)",
+      "status": "dead",
       "file": "sharex/framapic.org.sxcu"
     },
     {
@@ -1277,8 +1277,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "Service retired — redirects to invent.kde.org/snippets (2026-11 audit)",
+      "status": "dead",
       "file": "sharex/paste.kde.org (Sticky Notes).sxcu"
     },
     {
@@ -1347,8 +1347,8 @@
       "source": "sharex",
       "auth": "none",
       "recommended": false,
-      "note": "",
-      "status": "ok",
+      "note": "API no longer reachable anonymously (SPA catch-all on /api/*) — uploads broken (2026-11 audit)",
+      "status": "legacy",
       "file": "sharex/pastefy.ga.sxcu"
     },
     {

@@ -28,8 +28,8 @@
     "note": "Anonymous text paste"
   },
   "catbox.moe": {
-    "recommended": true,
-    "note": "Anonymous & permanent; slow from mainland China"
+    "recommended": false,
+    "note": "API rejecting uploads with 'Invalid uploader' since 2026-11 (service alive — under observation)"
   },
   "imgbb.com": {
     "recommended": true,
@@ -263,5 +263,21 @@
   "ttm.sh (URL shortener)": {
     "status": "dead",
     "note": "Unreachable in 2026-11 audit (timeout/TLS reset, incl. via VPN routing); presumed offline"
+  },
+  "paste.kde.org (Sticky Notes)": {
+    "status": "dead",
+    "note": "Service retired — redirects to invent.kde.org/snippets (2026-11 audit)"
+  },
+  "framapic.org": {
+    "status": "dead",
+    "note": "Framapic decommissioned — redirects to alt.framasoft.org/framapic/ (2026-11 audit)"
+  },
+  "pastefy.ga": {
+    "status": "legacy",
+    "note": "API no longer reachable anonymously (SPA catch-all on /api/*) — uploads broken (2026-11 audit)"
+  },
+  "bpaste.net": {
+    "status": "legacy",
+    "note": "Moved to bpa.st; the create form is XSRF-protected — an .sxcu cannot drive it, needs a dedicated code provider"
   }
 }
