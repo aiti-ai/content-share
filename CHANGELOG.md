@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.14 (2026-11-21)
+
+- 0.1.13 re-cut: the private-registry copy shipped before the catbox legacy fold — 0.1.14 converges both registries (catbox status legacy in catalog/index.json).
+
 ## 0.1.13 (2026-11-21)
 
 - catbox.moe also moves to status legacy — the API rejects uploads with "Invalid uploader" while the site itself is alive (under observation).
