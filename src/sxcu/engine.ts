@@ -48,7 +48,7 @@ function contentText(content: ShareContent, hooks?: ShareHooks, meta?: Record<st
   return new TextDecoder().decode(content.buffer);
 }
 
-function fillPlaceholders(text: string, values: Record<string, string>): string {
+export function fillPlaceholders(text: string, values: Record<string, string>): string {
   return text.replace(/<([A-Za-z0-9 _.\-]+)>/g, (m, raw: string) => {
     const key = raw.trim().toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "");
     return values[key] ?? values[raw.trim()] ?? m;
@@ -76,6 +76,10 @@ export async function executeSxcu(
   const text = contentText(content, hooks, meta);
   const filename = "filename" in content ? content.filename : (content.filename || "share.txt");
   const values = { ...target.values, ...meta };
+  // Container selection (e.g. a Joplin notebook id) injects into the placeholder
+  // declared by the config's Container block; empty/absent container = service
+  // default — nothing is injected and the template's empty string passes through.
+  if (config.Container?.field && target.container) values[config.Container.field] = target.container;
 
   const ctxBase: SyntaxContext = {
     input: text, filename, values, tags: meta.tags || target.tags,

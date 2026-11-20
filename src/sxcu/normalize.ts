@@ -1,5 +1,6 @@
 /** Instantiate a .sxcu config as a ShareProvider. */
 import type { MetaField, ProbeResult, ShareProvider, SxcuConfig, TargetConfig } from "../types.ts";
+import { makeContainerQuery } from "./containers.ts";
 import { configKinds, detectValueFields, executeSxcu } from "./engine.ts";
 
 export interface NormalizeOptions {
@@ -34,6 +35,7 @@ export function normalizeSxcu(opts: NormalizeOptions): ShareProvider {
     maxBytes: opts.maxBytes ?? 50 * 1024 * 1024,
     metaFields,
     probe: opts.probe,
+    ...(config.Container ? { containers: makeContainerQuery(config.Container) } : {}),
     async upload(content, meta, target, hooks) {
       return executeSxcu(config, content, target, meta, hooks);
     },

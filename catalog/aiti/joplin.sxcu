@@ -4,7 +4,17 @@
   "RequestMethod": "POST",
   "RequestURL": "http://localhost:41184/notes?token=<token>",
   "Body": "JSON",
-  "Data": "{\"title\":\"{{title}}\",\"body\":\"{{content}}\"}",
+  "Data": "{\"title\":\"{{title}}\",\"body\":\"{{content}}\",\"parent_id\":\"{{parent_id}}\"}",
   "Headers": { "Content-Type": "application/json" },
-  "URL": "joplin://x-callback-url/openNote?id=$json:id$"
+  "URL": "joplin://x-callback-url/openNote?id=$json:id$",
+  "Container": {
+    "field": "parent_id",
+    "label": { "zh": "笔记本", "en": "Notebook" },
+    "listUrl": "http://localhost:41184/folders?token=<token>&fields=id,parent_id,title&limit=100",
+    "itemsPath": "items",
+    "idField": "id",
+    "labelField": "title",
+    "parentField": "parent_id",
+    "pages": { "param": "page", "moreField": "has_more" }
+  }
 }

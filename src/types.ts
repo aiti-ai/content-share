@@ -22,6 +22,60 @@ export interface MetaField {
   hint?: string;
 }
 
+/**
+ * A selectable container (notebook / folder / directory) offered by a provider.
+ * ids are opaque provider-side strings (Joplin folder id, SiYuan notebook id,
+ * Obsidian vault path).
+ */
+export interface Container {
+  id: string;
+  /** Display label of the container itself. */
+  label: string;
+  /** Parent container id (full-list tree mode). */
+  parent?: string;
+  /** Full path label ("Notebook A / Sub B") for flat rendering of trees. */
+  path?: string;
+}
+
+/**
+ * Declarative container listing for sxcu configs: describes one listing endpoint
+ * (notebooks / folders / directories). Credentials in the URL/headers are filled
+ * from the target's stored values server-side — they never reach the browser.
+ */
+export interface ContainerSpec {
+  /** Placeholder the selected container id is injected into at upload time. */
+  field: string;
+  /** Picker label (localized text). */
+  label?: LocalizedText;
+  /** When true an empty selection is valid ("service default"). Default true. */
+  optional?: boolean;
+  /** Listing URL; fills `<values>` and `{{parent}}` (per-parent lazy listing mode). */
+  listUrl: string;
+  method?: "GET" | "POST";
+  body?: string;
+  headers?: Record<string, string>;
+  /** Dotted path to the items array in the response ("items", "data.notebooks"). */
+  itemsPath?: string;
+  idField?: string;
+  labelField?: string;
+  /** Presence switches to full-list tree mode: one paginated fetch, tree built from parentField. */
+  parentField?: string;
+  /** Keep only items whose fields equal these values (e.g. {"type":"folder"}). */
+  filter?: Record<string, string>;
+  /** Paginated listing (Joplin: { param: "page", moreField: "has_more" }). */
+  pages?: { param: string; moreField: string };
+}
+
+/** Runtime container capability exposed by a provider. */
+export interface ContainerQuery {
+  /** Placeholder the selected container id is injected into at upload time. */
+  field: string;
+  /** Picker label (localized text). */
+  label?: LocalizedText;
+  /** List containers; parent scopes per-parent lazy listing modes. */
+  list(cfg: TargetConfig, parent?: string): Promise<Container[]>;
+}
+
 export interface TargetConfig {
   /** Provider id from the catalog (e.g. "catbox.moe"). */
   provider: string;
@@ -30,6 +84,8 @@ export interface TargetConfig {
   /** Optional default tags/directory prefix applied at share time. */
   tags?: string;
   pathPrefix?: string;
+  /** Selected container id (notebook / folder / directory); empty = service default. */
+  container?: string;
 }
 
 export interface ShareResult {
@@ -63,6 +119,8 @@ export interface ShareProvider {
   metaFields: MetaField[];
   /** Long-lived background services (Joplin/Obsidian) can be probed. */
   probe?: (cfg: TargetConfig) => Promise<ProbeResult>;
+  /** Container selection capability (notebooks / folders / directories), when supported. */
+  containers?: ContainerQuery;
   upload(content: ShareContent, meta: Record<string, string>, cfg: TargetConfig, hooks?: ShareHooks): Promise<ShareResult>;
 }
 
@@ -83,6 +141,8 @@ export interface SxcuConfig {
   ThumbnailURL?: string;
   DeletionURL?: string;
   ErrorMessage?: string;
+  /** aiti extension: declarative container selection (notebook/folder picker). */
+  Container?: ContainerSpec;
 }
 
 /** Bilingual display text: plain string (single language) or zh/en pair. */
