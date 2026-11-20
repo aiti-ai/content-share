@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.12 (2026-11-20)
+
+- Catalog: fold the 2026-11-20 recheck — paste.kde.org and framapic.org retired (dead), pastefy/bpaste upload paths broken (legacy), catbox demoted from recommended while its API rejects uploads with 'Invalid uploader'.
+- New: container selection semantics for share targets (containers block, per-parent/tree listing, id injection into declared placeholders).
+
 ## 0.1.11 (2026-11-19)
 
 - Engine: a template-extracted URL with an empty parameter value (e.g. `?h=`) now fails with a clear error instead of returning an unusable share link.
