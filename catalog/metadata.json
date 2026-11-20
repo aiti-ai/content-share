@@ -29,7 +29,8 @@
   },
   "catbox.moe": {
     "recommended": false,
-    "note": "API rejecting uploads with 'Invalid uploader' since 2026-11 (service alive — under observation)"
+    "note": "API rejecting uploads with 'Invalid uploader' since 2026-11-19 (service alive — under observation)",
+    "status": "legacy"
   },
   "imgbb.com": {
     "recommended": true,

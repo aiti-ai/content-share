@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.13 (2026-11-21)
+
+- catbox.moe also moves to status legacy — the API rejects uploads with "Invalid uploader" while the site itself is alive (under observation).
+
 ## 0.1.12 (2026-11-20)
 
 - Catalog: fold the 2026-11-20 recheck — paste.kde.org and framapic.org retired (dead), pastefy/bpaste upload paths broken (legacy), catbox demoted from recommended while its API rejects uploads with 'Invalid uploader'.
