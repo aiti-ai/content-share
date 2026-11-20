@@ -7,10 +7,10 @@ import { applyOverlay } from "../src/remote.ts";
 
 const catalog = JSON.parse(await readFile(new URL("../catalog/index.json", import.meta.url), "utf8"));
 
-test("catalog: 161 entries with 8 recommended spanning all kinds", () => {
+test("catalog: 161 entries with 7 recommended spanning all kinds", () => {
   assert.ok(catalog.count >= 158, `count=${catalog.count}`);
   const rec = catalog.entries.filter((e) => e.recommended);
-  assert.equal(rec.length, 8);
+  assert.equal(rec.length, 7);
   for (const kind of ["text", "image", "file"]) assert.ok(rec.some((e) => e.kinds.includes(kind)), `missing ${kind}`);
   assert.ok(catalog.entries.some((e) => e.category === "archive" && e.id === "joplin"));
   assert.equal(catalog.entries.find((e) => e.id === "api.anonfiles.com")?.status, "dead");
